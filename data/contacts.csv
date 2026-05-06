@@ -1,0 +1,9 @@
+id,name,email,timezone,unsubscribed
+c001,Arjun Sharma,arjun.sharma@example.com,Asia/Kolkata,false
+c002,Priya Nair,priya.nair@example.com,Asia/Kolkata,false
+c003,Rohan Mehta,rohan.mehta@example.com,Asia/Kolkata,false
+c004,Sneha Reddy,sneha.reddy@example.com,Asia/Kolkata,false
+c005,Vikram Patel,vikram.patel@example.com,America/New_York,false
+c006,Anjali Singh,anjali.singh@example.com,Asia/Kolkata,false
+c007,Dev Kumar,dev.kumar@example.com,Asia/Kolkata,true
+c008,Meena Iyer,meena.iyer@example.com,Europe/London,false

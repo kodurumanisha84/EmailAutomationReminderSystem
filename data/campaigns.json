@@ -1,0 +1,20 @@
+[
+  {
+    "id": "camp001",
+    "name": "Class Reminder",
+    "subject": "Reminder: {{name}}, your session starts soon!",
+    "body_md": "Hi **{{name}}**,\n\nThis is a friendly reminder that your **{{title}}** is scheduled.\n\n📅 **Date & Time:** {{scheduled_time}}\n\nPlease make sure you're prepared and on time. If you have any questions, reply to this email.\n\n---\nBest regards,\n**The Training Team**"
+  },
+  {
+    "id": "camp002",
+    "name": "Payment Reminder",
+    "subject": "Action Required: Payment Due — {{name}}",
+    "body_md": "Dear **{{name}}**,\n\nWe wanted to remind you that a payment is due on **{{scheduled_time}}**.\n\n💳 Please complete your payment at the earliest to avoid any late fees.\n\nIf you've already made the payment, please disregard this message.\n\n---\nRegards,\n**Finance Team**"
+  },
+  {
+    "id": "camp003",
+    "name": "Assignment Deadline",
+    "subject": "⚠️ Deadline Alert: {{title}} — {{name}}",
+    "body_md": "Hello **{{name}}**,\n\nYour **{{title}}** submission deadline is approaching!\n\n🗓️ **Due Date:** {{scheduled_time}}\n\nPlease ensure you submit your work before the deadline. Late submissions may not be accepted.\n\nGood luck!\n\n---\n**Academic Team**"
+  }
+]

@@ -1,0 +1,7 @@
+id,title,contact_id,campaign_id,start_at_utc,rrule,active
+r001,Weekly Class Reminder,c001,camp001,2025-01-20 13:30:00,FREQ=WEEKLY;BYDAY=MO,true
+r002,Payment Due Notice,c002,camp002,2025-01-20 05:30:00,,true
+r003,Webinar Invite,c003,camp001,2025-01-21 12:00:00,,true
+r004,Assignment Deadline,c004,camp003,2025-01-22 06:00:00,,true
+r005,Daily Standup Alert,c005,camp001,2025-01-20 14:30:00,FREQ=DAILY;BYHOUR=9;BYMINUTE=0,true
+r006,Monthly Invoice,c006,camp002,2025-01-25 05:30:00,FREQ=MONTHLY;BYMONTHDAY=25,true

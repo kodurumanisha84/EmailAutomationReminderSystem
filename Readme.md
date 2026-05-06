@@ -2,10 +2,12 @@
 
 # 📨 Email Automation & Reminder System
 
-## 🌾 Project Overview: Multilingual Mandi
-This project is a high-performance, asynchronous backend system designed to handle automated email reminders. While built as a general-purpose tool, it is optimized for the **Multilingual Mandi** platform, allowing for localized communication with vendors and farmers regarding price updates, payment deadlines, and session starts.
+## 🌾 Project Overview: 
+This project is a robust, asynchronous backend solution designed for the automated scheduling and dispatching of emails. It is built to solve the challenge of "set-and-forget" notifications, where a user can schedule an email via an API, and a background worker ensures it is delivered at the precise moment required.
 
-The system uses **FastAPI** for the web interface, **SQLite** for persistent storage, and a dedicated **Background Scheduler** to process and dispatch emails.
+The system architecture is divided into two main components:
+The Producer (FastAPI): A high-performance REST API that receives contact information and schedules reminders.
+The Consumer (Background Scheduler): A decoupled worker process that monitors the database and handles the actual SMTP email transmission.
 
 ---
 
@@ -19,11 +21,11 @@ The system uses **FastAPI** for the web interface, **SQLite** for persistent sto
 ---
 
 ## 🛠️ Tech Stack
-*   **Language**: Python 3.10+[cite: 1]
-*   **Framework**: FastAPI (Web API)[cite: 1]
-*   **Database**: SQLite (SQLAlchemy ORM)[cite: 1]
-*   **Email Engine**: SMTP / Secure Mail Processing[cite: 1]
-*   **Testing**: Requests library / Swagger UI[cite: 1]
+*   **Language**: Python 3.14
+*   **Framework**: FastAPI (Web API)
+*   **Database**: SQLite (SQLAlchemy ORM)
+*   **Email Engine**: SMTP / Secure Mail Processing
+*   **Testing**: Requests library / Swagger UI
 
 ---
 
@@ -61,20 +63,20 @@ Run the Scheduler (Terminal 2):
 PowerShell
 python -m src.scheduler
 🧪 Testing the Pipeline
-To verify the system without manual curl commands, run the provided test script[cite: 1]:
+To verify the system without manual curl commands, run the provided test script
 
 PowerShell
 python test_api.py
 This script automates:
 
-Creating a new Contact[cite: 1].
+Creating a new Contact
 
-Handling UUID mapping[cite: 1].
+Handling UUID mapping
 
-Scheduling a Reminder for immediate dispatch[cite: 1].
+Scheduling a Reminder for immediate dispatch
 
 📈 API Documentation
-Once the server is running, access the interactive documentation at[cite: 1]:
+Once the server is running, access the interactive documentation at
 
 Swagger UI: http://127.0.0.1:8000/docs
 

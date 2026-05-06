@@ -8,18 +8,7 @@ This project is a robust, asynchronous backend solution designed for the automat
 The system architecture is divided into two main components:
 The Producer (FastAPI): A high-performance REST API that receives contact information and schedules reminders.
 The Consumer (Background Scheduler): A decoupled worker process that monitors the database and handles the actual SMTP email transmission.
-
 ---
-
-## 🚀 Key Features
-*   **Asynchronous API**: Built with FastAPI for high-speed request handling.
-*   **Background Scheduler**: A decoupled worker that checks the database every 15-30 seconds to send "due" reminders.
-*   **Data Integrity**: Uses UUIDs for unique identification and prevents duplicate contact registration (e.g., handling `409 Conflict` errors).
-*   **Multilingual Support**: Supports UTF-8 encoding for templates in Hindi, Telugu, and other local languages[cite: 1].
-*   **Comprehensive Analytics**: Endpoints to track sent messages and system health[cite: 1].
-
----
-
 ## 🛠️ Tech Stack
 *   **Language**: Python 3.14
 *   **Framework**: FastAPI (Web API)
